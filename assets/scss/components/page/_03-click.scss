@@ -1,0 +1,151 @@
+// ========================================================================
+// [click] | 클릭
+// ========================================================================
+
+.click-type{
+  width: 1094px;
+  margin: 0 auto;
+  font-size: 0;
+  .click-box{
+    margin-top: 33px;
+  }
+  .ui{
+    padding: 7px 12px;
+    box-sizing: border-box;
+  }
+  .unit-click{
+    width: auto;
+    padding: 12px 10px;
+    text-align: center;
+    border-radius: 14px;
+    border: 1px solid rgb(245, 208, 163);
+    box-shadow: inset 0px -3px 0px 0px rgba(240, 180, 108, 1);
+    -webkit-box-shadow: inset 0px -3px 0px 0px rgba(240, 180, 108, 1);
+    -moz-box-shadow: inset 0px -3px 0px 0px rgba(240, 180, 108, 1);
+    -ms-box-shadow: inset 0px -3px 0px 0px rgba(240, 180, 108, 1);
+    background-color: #ffebc0;
+    box-sizing: border-box;
+    &.click-o{
+      position: relative;
+      border: 1px solid #ffebc0;
+      box-shadow: inset 0px -3px 0px 0px #ffebcf;
+      -webkit-box-shadow: inset 0px -3px 0px 0px #ffebcf;
+      -moz-box-shadow: inset 0px -3px 0px 0px #ffebcf;
+      -ms-box-shadow: inset 0px -3px 0px 0px #ffebcf;
+      box-sizing: border-box;
+      &::after{
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 42px;
+        height: 42px;
+        margin-top: -21px;
+        margin-left: -21px;
+        background-image: url('#{$imgPath}/i-correct@2x.png');
+        background-repeat: no-repeat;
+        background-size: 42px 42px;
+        content: '';
+
+        // OX 애니메이션
+        animation-name: pulse;
+        -webkit-animation-name: pulse;
+        animation-duration: 0.8s;	
+        -webkit-animation-duration: 0.8s;
+
+        @keyframes pulse {
+          0% {
+            transform: scale(1);
+            opacity: 1;		
+          }
+          50% {
+            transform: scale(1.4);
+            opacity: 0.7;	
+          }	
+          100% {
+            transform: scale(1);
+            opacity: 1;	
+          }			
+        }
+        @-webkit-keyframes pulse {
+          0% {
+            transform: scale(1);
+            opacity: 1;		
+          }
+          50% {
+            transform: scale(1.4);
+            opacity: 0.7;	
+          }	
+          100% {
+            transform: scale(1);
+            opacity: 1;	
+          }	
+        }
+      }
+    }
+    &.click-x{
+      position: relative;
+      border: 1px solid #f7f7f7;
+      box-shadow: inset 0px -3px 0px 0px #f7f7f7;
+      -webkit-box-shadow: inset 0px -3px 0px 0px #f7f7f7;
+      -moz-box-shadow: inset 0px -3px 0px 0px #f7f7f7;
+      -ms-box-shadow: inset 0px -3px 0px 0px #f7f7f7;
+      background-color: #f7f7f7;
+      box-sizing: border-box;
+      .txt{
+        color: #a0a0a0;
+      }
+
+      &::after{
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        margin-top: -21px;
+        margin-left: -20px;
+        background-image: url('#{$imgPath}/i-incorrect@2x.png');
+        background-repeat: no-repeat;
+        background-size: 40px 40px;
+        clear: both;
+        content: '';
+
+        // OX 애니메이션
+        animation-name: pulse;
+        -webkit-animation-name: pulse;
+        animation-duration: 0.8s;	
+        -webkit-animation-duration: 0.8s;
+
+        @keyframes pulse {
+          0% {
+            transform: scale(1);
+            opacity: 1;		
+          }
+          50% {
+            transform: scale(1.4);
+            opacity: 0.7;	
+          }	
+          100% {
+            transform: scale(1);
+            opacity: 1;	
+          }			
+        }
+        @-webkit-keyframes pulse {
+          0% {
+            transform: scale(1);
+            opacity: 1;		
+          }
+          50% {
+            transform: scale(1.4);
+            opacity: 0.7;	
+          }	
+          100% {
+            transform: scale(1);
+            opacity: 1;	
+          }	
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+// ========================================================================
+// [example] | 보기(지문)
+// ========================================================================
+
+.example-box{
+  display: block;
+  margin-top: 20px;
+  padding: 0 80px;
+  text-align: center;
+  box-sizing: border-box;
+  
+  .ex-area{
+    display: inline-block;
+  }
+
+  // ## bd-box: 필수 보더 박스
+  .bd-box{
+    display: inline-block;
+    border: 2px solid #e2e3e9;
+    border-radius: 14px;
+    box-sizing: border-box;
+    background-color: #fff;
+
+
+    // ## bd-box-txt: 텍스트 지문일 때
+    &.bd-box-txt{
+      padding: 20px 30px;
+      box-sizing: border-box;
+    }
+
+    // ## bd-box-img: 이미지 지문일 때
+    &.bd-box-img{
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    // ## bd-box-tit: 문제 텍스트 지문(연노랑 박스)일 때
+    &.bd-box-tit{
+      display: block;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #fdfaef;
+      border: 0 none;
+      border-radius: 10px;
+      box-sizing: border-box;
+      .ex-area{
+        .txt{
+          font-weight: $sub-weight;
+          line-height: 1;
+          // #### 보기 - 빈칸(밑줄)
+          .txt-blank{
+            display: inline-block;
+            position: relative;
+            top: -9px;
+            min-width: 26px;
+            border-bottom: 2px solid #333;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }  
+    // ## bd-box-mix-1: 문제 텍스트 지문(연노랑 박스) + 텍스트 지문일 때
+    &.bd-box-mix-1{
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    // ## bd-box-mix-2: 이미지 지문 + 텍스트 지문일 때
+    &.bd-box-mix-2{
+      padding: 10px 30px 10px 10px;
+      box-sizing: border-box;
+      .layout-inner{
+        vertical-align: middle;
+        &:last-child{
+          padding-left: 30px;
+          box-sizing: border-box;
+        }
+      }
+    }
+
+    // ## bd-box-mix-3: 이미지 지문 + 문제 텍스트 지문(연노랑 박스) + 텍스트 지문일 때
+    &.bd-box-mix-3{
+      padding: 10px 30px 10px 10px;
+      box-sizing: border-box;
+      .layout-inner{
+        vertical-align: top;
+        &:last-child{
+          padding-left: 30px;
+          box-sizing: border-box;
+        }
+      }
+      
+    }
+  }
+}

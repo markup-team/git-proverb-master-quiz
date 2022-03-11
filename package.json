@@ -1,0 +1,21 @@
+{
+  "name": "201023-proverb-quiz-html_v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-modify-css-urls": "^2.0.0",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-sass": "^4.1.0",
+    "gulp": "^3.9.1",
+    "run-sequence": "^2.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "gulp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

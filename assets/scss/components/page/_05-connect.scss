@@ -1,0 +1,102 @@
+// ========================================================================
+// [connect] | 선잇기
+// ========================================================================
+
+.connect-type{
+  width: 1080px;
+  margin: 0 auto;
+  font-size: 0;
+  text-align: center;
+  .connect-box{
+    display: table;
+    width: auto;
+    padding: 6px 0;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+  }
+  .connect-area{
+    position: static;
+    width: auto;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .connect-area-inner{
+    position: relative;
+    padding: 19px 0;
+    box-sizing: border-box;
+    font-size: 0;
+    box-sizing: border-box;
+  }
+  .ca-box {
+    display: table-cell;
+    height: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    vertical-align: middle;
+    box-sizing: border-box;
+      
+    &.box-short{
+      width: 272px;
+      border: 2px solid #e9e5e2;
+      background-color: #fff;
+      box-sizing: border-box;
+    }
+    &.box-long{
+      width: 576px;
+      background-color: #fff6e7;
+      .txt{
+        font-size: 24px;
+        line-height: 1.5em;
+      }
+    }
+  }
+
+  
+  .connect-point{
+    position: static;
+    width: auto;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    &.cp-left{
+      padding-right: 64px;
+      box-sizing: border-box;
+    }
+    &.cp-right{
+      padding-left: 64px;
+      box-sizing: border-box;
+    }
+  }
+  
+
+  .connect-point-inner{
+    position: relative;
+    padding: 19px 0;
+    box-sizing: border-box;
+    font-size: 0;
+  }
+  .connect-dot-wrap {
+    display: table-cell;
+    height: 200px;
+    padding: 0 14px;
+    border-radius: 20px;
+    vertical-align: middle;
+    box-sizing: border-box;
+      
+    .connect-dot{
+      position: relative;
+      display: inline-block;
+      width: 24px;
+      height: 24px; 
+      border: 6px solid #f5cc69;
+      border-radius: 14px;
+      background-color: #fdf5e1;
+      box-sizing: border-box;
+    }
+  }
+
+}
+

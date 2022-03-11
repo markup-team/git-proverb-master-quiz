@@ -1,0 +1,239 @@
+// ========================================================================
+// [common] | 공통
+// ========================================================================
+.blind,
+caption,
+legend{
+  @extend %blind
+}
+button{ border: 0 none}
+body{ overflow: scroll; background-color: #000;}
+
+// ### 레이아웃 - 기본
+#wrapper{
+  position: relative;
+  width: 1183px;
+  height: auto;
+  background-color: transparent;
+}
+#contents{
+  position: relative;
+  left: 3px;
+  padding-top: 20px;
+  width: 1180px;
+  height: auto;
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  box-sizing: border-box;
+}
+
+.dp-table{
+  display: table;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.dp-cell{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+// ### 공통
+.layout{ position: relative; display: table}
+.layout-inner{ position: relative; display: table-cell}
+
+.mt-5{ margin-top: 5px}
+.mt-20{ margin-top: 20px}
+.mt-25{ margin-top: 25px}
+.mt-30{ margin-top: 30px}
+.mt-40{ margin-top: 40px}
+
+// ### 드래그 요소 하단 고정
+.ui-pos{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  z-index: 100;
+}
+
+// ### 버튼 레이아웃
+.ui{
+  display: inline-block;
+  &.ui-col-1{
+    width: 100%;
+  }
+  &.ui-col-2{
+    width: 50%;
+  }
+  &.ui-col-3{
+    width: 33.3%;
+  }
+  &.ui-col-4{
+    width: 25%;
+  }
+}
+
+// ### 텍스트
+.txt{
+  display: inline-block;
+  color: $base-color;
+  font-weight: $base-weight;
+  font-family: $base-font;
+  font-size: $base-size;
+  line-height: 1.4em;
+}
+
+// * --------------------------------
+// * background : %background-img
+// * --------------------------------
+
+.ico{
+  display: inline-block;
+  background-image: url('#{$imgPath}/css-sprites@2x.png');
+  background-size: 298px 249px;
+  text-indent: -999em;
+  // 닫기버튼
+  &.i-top-close{
+    width: 31px;
+    height: 30px;
+    background-position: -93px -210px;
+  }
+  // 안내버튼
+  &.i-top-info{
+    width: 26px;
+    height: 25px;
+    background-position: -134px -210px;
+  }
+  // 금관
+  &.i-gold-crown{
+    width: 62px;
+    height: 64px;
+    margin-top: 5px;
+    background-position: -231px -5px;
+  }
+  // 은관
+  &.i-sliver-crown{
+    width: 62px;
+    height: 64px;
+    margin-top: 5px;
+    background-position: -231px -79px;
+  }
+  // 동관
+  &.i-bronze-crown{
+    width: 62px;
+    height: 64px;
+    margin-top: 5px;
+    background-position: -157px -87px;
+  }
+  // 금별
+  &.i-gold-star{
+    width: 66px;
+    height: 67px;
+    margin-top: 4px;
+    background-position: -5px -87px;
+  }
+  // 은별
+  &.i-sliver-star{
+    width: 66px;
+    height: 67px;
+    margin-top: 4px;
+    background-position: -81px -87px;
+  }
+  // 동별
+  &.i-bronze-star{
+    width: 66px;
+    height: 67px;
+    margin-top: 4px;
+    background-position: -155px -5px;
+  }
+  // 하단 작은 레벨
+  &.i-small-level{
+    width: 34px;
+    height: 34px;
+    // 작은 금관
+    &.i-gold-crown{
+      background-position: -139px -164px;
+    }
+    // 작은 은관
+    &.i-sliver-crown{
+      background-position: -5px -210px;
+    }
+    // 작은 동관
+    &.i-bronze-crown{
+      background-position: -51px -164px;
+    }
+    // 작은 금별
+    &.i-gold-star{
+      background-position: -95px -164px;
+    }
+    // 작은 은별
+    &.i-sliver-star{
+      background-position: -49px -210px;
+    }
+    // 작은 동별
+    &.i-bronze-star{
+      background-position: -95px -164px;
+    }
+    // 작은 물음표
+    &.i-question-mark{
+      background-position: -5px -164px;
+    }
+  }
+  &.i-corn{
+    width: 65px;
+    height: 72px;
+    background-position: -80px -5px;
+  }
+}
+.on{
+  .ico.i-corn{
+    background-position: -5px -5px;
+  }
+}
+.i-month{
+  display: inline-block;
+  width: 23px;
+  height: 12px;
+  background-size: 23px 12px;
+  @extend %ir;
+  &.i-month-1{
+    background-image: url('#{$imgPath}/i-month-1@2x.png')
+  }
+  &.i-month-2{
+    background-image: url('#{$imgPath}/i-month-2@2x.png')
+  }
+  &.i-month-3{
+    background-image: url('#{$imgPath}/i-month-3@2x.png')
+  }
+  &.i-month-4{
+    background-image: url('#{$imgPath}/i-month-4@2x.png')
+  }
+  &.i-month-5{
+    background-image: url('#{$imgPath}/i-month-5@2x.png')
+  }
+  &.i-month-6{
+    background-image: url('#{$imgPath}/i-month-6@2x.png')
+  }
+  &.i-month-7{
+    background-image: url('#{$imgPath}/i-month-7@2x.png')
+  }
+  &.i-month-8{
+    background-image: url('#{$imgPath}/i-month-8@2x.png')
+  }
+  &.i-month-9{
+    background-image: url('#{$imgPath}/i-month-9@2x.png')
+  }
+  &.i-month-10{
+    background-image: url('#{$imgPath}/i-month-10@2x.png')
+  }
+  &.i-month-11{
+    background-image: url('#{$imgPath}/i-month-11@2x.png')
+  }
+  &.i-month-12{
+    background-image: url('#{$imgPath}/i-month-12@2x.png')
+  }
+}

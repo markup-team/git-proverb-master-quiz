@@ -1,0 +1,65 @@
+// ========================================================================
+// [question] | 지시문
+// ========================================================================
+
+
+.question-box{
+  display: table;
+  position: relative;
+  left: -3px;
+
+  .question-area{
+    display: table-cell;
+    vertical-align: top;
+
+    .question-area-inner{
+      position: relative;
+      font-size: 0;
+
+      .q-txt-box{
+        padding-left: 19px;
+        padding-top: 1px;
+        box-sizing: border-box;
+        .txt{
+          font-family: $sub-font;
+          font-weight: $sub-weight;
+          line-height: 1.4em;
+        }
+      }
+      
+      .q-icon-box{
+        display: table-cell;
+        height: 42px;
+        padding: 0 4px 0 14px;
+        border-radius: 4px 0 0 4px;
+        vertical-align: middle;
+        background-color: #678fbe;
+        box-sizing: border-box;
+        .i-question-q{
+          display: inline-block;
+          width: 15px;
+          height: 20px;
+          background-image: url('#{$imgPath}/i-question-q@2x.png');
+          background-size: 15px 20px;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .q-num-box{
+        display: table-cell;
+        height: 42px;
+        padding: 0 14px 0 4px;
+        border-radius: 0 10px 10px 0;
+        vertical-align: middle;
+        background-color: #678fbe;
+        box-sizing: border-box;
+        .i-question-num{
+          color: #fff;
+          font-size: 25px;
+          text-align: center;
+          font-family: $sub-font;
+        }
+      }
+    }
+  }
+}

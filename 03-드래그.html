@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>속담의 달인 퀴즈 - 드래그</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div id="wrapper">
+  <div id="contents">
+    <!-- 지시문 -->
+    <header>
+      <h2 id="question">
+        <!-- ### [question-box] 지시문 - 기본 -->
+        <section class="question-box">
+    
+          <div class="question-area">
+            <div class="question-area-inner">
+              <!-- [q-icon-box] Q 아이콘 -->
+              <div class="q-icon-box">
+                <i class="i-question-q">Q</i>
+              </div>
+            </div>
+          </div>
+          <div class="question-area">
+            <div class="question-area-inner">
+              <!-- [q-num-box] 시스템 숫자 -->
+              <div class="q-num-box">
+                <span class="i-question-num">3</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="question-area">
+            <div class="question-area-inner">
+              <!-- [q-txt-box] 지시문 -->
+              <div class="q-txt-box">
+                <span class="txt">
+                  지시문이 들어가는 영역입니다. <br>
+                  다음 이미지에 가장 어울리는 속담을 클릭하세요.
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ### //[question-box] 지시문 - 기본 -->
+      </h2>
+    </header>
+    <!-- // 지시문 -->
+    
+    
+    <!-- #### [proverb-quiz] 속담의 달인 - 퀴즈 -->
+    <!-- click-type: 클릭 유형 / dnd-type: 드래그 드롭 유형 / connect-type: 선잇기 유형 -->
+    <article class="proverb-quiz dnd-type">
+
+        <!-- ### 드래그 드롭 문제 - 드롭 요소 -->
+        <section class="drop-box">
+        
+          <div class="unit-drop">
+            <!--
+              unit-drop-base: 빈 칸(기본)
+              unit-drop-txt: 텍스트
+              unit-drop-o: 정답 처리
+              unit-drop-x: 오답 처리
+            -->
+            <div class="unit-drop-x">
+              <span class="txt">
+                사람
+              </span>
+            </div>
+          </div>
+
+          <div class="unit-drop-txt">
+            <span class="txt">
+              은 죽으면 이름을 남기고
+            </span>
+          </div>
+          
+          <br>
+
+          <div class="unit-drop">
+            <div class="unit-drop-o">
+              <span class="txt">
+                호랑이
+              </span>
+            </div>
+          </div>
+
+          <div class="unit-drop-txt">
+            <span class="txt">
+              는 죽으면&nbsp;
+            </span>
+          </div>
+
+          <div class="unit-drop">
+            <div class="unit-drop-base">
+              <span class="txt">
+                가죽
+              </span>
+            </div>
+          </div>
+
+          <div class="unit-drop-txt">
+            <span class="txt">
+              을 남긴다.
+            </span>
+          </div>
+        
+        </section>
+        <!-- // ### 드래그 문제 - 드롭 요소 -->
+      
+        <!-- ### 드래그 드롭 문제 - 드롭 요소 -->
+        <section class="drop-box">
+        
+          <div class="unit-drop">
+            <div class="unit-drop-base unit-drop-x">
+              <span class="txt">
+                사람
+              </span>
+            </div>
+          </div>
+          <div class="unit-drop">
+            <div class="unit-drop-o">
+              <span class="txt">
+                호랑이
+              </span>
+            </div>
+          </div>
+          <div class="unit-drop">
+            <div class="unit-drop-base">
+              <span class="txt">
+                가죽
+              </span>
+            </div>
+          </div>
+          <div class="unit-drop">
+            <div class="unit-drop-base">
+              <span class="txt">
+                삽
+              </span>
+            </div>
+          </div>
+        </section>
+        <!-- // ### 드래그 문제 - 드롭 요소 -->
+        
+        <div class="ui-pos">
+          <!-- ### 드래그 드롭 문제 - 드래그 요소 -->
+          <section class="drag-box">
+        
+            <div class="unit-drag">
+              <!-- unit-drag-base: 빈 칸 / unit-drag-target: 드래그 요소 -->
+              <div class="unit-drag-base">
+                <span class="txt">
+                  호랑이
+                </span>
+              </div>
+              <div class="unit-drag-target">
+                <span class="txt">
+                  호랑이
+                </span>
+              </div>
+            </div>
+
+            <div class="unit-drag">
+              <div class="unit-drag-base">
+                <span class="txt">
+                  삽
+                </span>
+              </div>
+              <!-- 드래그 요소: 절대값으로 이동 -->
+              <div class="unit-drag-target" style="top: -50px; left: 10px;">
+                <span class="txt">
+                  삽
+                </span>
+              </div>
+            </div>
+
+            <div class="unit-drag">
+              <div class="unit-drag-base">
+                <span class="txt">
+                  호랑이
+                </span>
+              </div>
+              <div class="unit-drag-target">
+                <span class="txt">
+                  호랑이
+                </span>
+              </div>
+            </div>
+
+            <div class="unit-drag">
+              <div class="unit-drag-base">
+                <span class="txt">
+                  호랑이
+                </span>
+              </div>
+              <div class="unit-drag-target">
+                <span class="txt">
+                  호랑이
+                </span>
+              </div>
+            </div>
+          </section>
+          <!-- // ### 드래그 드롭 문제 - 드롭 요소 -->
+        </div>
+        
+      </article>
+      <!-- // #### [proverb-quiz] 속담의 달인 - 퀴즈 -->
+    </div>
+  </div>
+</body>
+</html>
